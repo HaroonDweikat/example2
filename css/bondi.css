@@ -51,12 +51,16 @@ body {
 .navbar .navbar-toggler {
     border-color: white;
     font-size: 25px;
-    background-color: white;
+    color: white;
 }
 
 .navbar .navbar-toggler:focus {
     box-shadow: none;
 }
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--cyan);
+  }
 
 .navbar .navbar-nav .active,
 .navbar .navbar-nav .nav-link:hover,
